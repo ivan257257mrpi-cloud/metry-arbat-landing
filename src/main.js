@@ -72,7 +72,7 @@ burger.addEventListener('click', () => {
 
 // ----- Ссылки «Построить маршрут» -----
 document.querySelectorAll('[data-route]').forEach((a) => {
-  a.href = `https://yandex.ru/maps/?rtext=~${SITE.routeCoords[0]},${SITE.routeCoords[1]}&rtt=auto`;
+  a.href = `https://yandex.ru/maps/?rtext=~${SITE.coords[0]},${SITE.coords[1]}&rtt=auto`;
 });
 
 // ----- Появление блоков -----
