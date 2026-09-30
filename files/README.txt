@@ -1,0 +1,1 @@
+Сюда положить presentation.pdf

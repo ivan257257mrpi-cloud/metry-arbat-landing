@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.claude/
+.playwright-mcp/
+# исходники медиа и документы — не в репозитории; готовые картинки лежат в public/img
+media/
+docs/
+~$*
+leads.log
