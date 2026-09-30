@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
   <!-- ЗАГЛУШКА: сюда вставить код счётчика Яндекс Метрики, когда будет номер -->
-  <script type="module" crossorigin src="./assets/index-s22KT1J_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BI53BPeb.css">
+  <script type="module" crossorigin src="./assets/index-CQRaUoRd.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BIEE1VG0.css">
 </head>
 <body>
 
@@ -88,15 +88,14 @@
       </ul>
       <div class="hero__actions" data-reveal>
         <button class="btn btn--light" type="button" data-popup="presentation">Получить презентацию</button>
-        <a class="btn btn--ghost-light" href="#invest">Я инвестор</a>
+        <a class="btn btn--ghost-light" href="#scenarios">Я инвестор</a>
       </div>
     </div>
   </div>
-  <p class="render-mark hero__mark">Визуализация проекта</p>
 </section>
 
 <!-- ===== 2. Что именно вы покупаете ===== -->
-<section class="section" id="about">
+<section class="section screen" id="about">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Собственный офис. Возможности целого бизнес-центра</h2>
@@ -133,7 +132,7 @@
 </section>
 
 <!-- ===== 3. Офисы ===== -->
-<section class="section" id="offices">
+<section class="section screen" id="offices">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Выберите офис под свой сценарий работы</h2>
@@ -164,11 +163,16 @@
         </div>
       </article>
     </div>
+  </div>
+</section>
 
-    <!-- «Целый этаж для одной компании» скрыт до подтверждения (см. ЧТО-ЗАМЕНИТЬ.md) -->
+<!-- ===== 4. Представительский офис ===== -->
+<!-- «Целый этаж для одной компании» скрыт до подтверждения (см. ЧТО-ЗАМЕНИТЬ.md) -->
+<section class="section screen" id="office130">
+  <div class="container">
     <article class="special">
       <div class="special__head" data-reveal>
-        <h3 class="h2">Представительский офис 130 м²</h3>
+        <h2 class="h2">Представительский офис 130 м²</h2>
         <p class="special__sub">Собственный вход · два уровня</p>
       </div>
       <div class="special__grid">
@@ -192,29 +196,30 @@
 </section>
 
 <!-- ===== 5. Готовая отделка ===== -->
-<section class="section section--tight" id="finish">
-  <div class="container finish">
-    <div data-reveal>
-      <h2 class="h2">Готовая дизайнерская отделка</h2>
-      <p class="finish__lead">Офисы передаются с завершённой отделкой в единой интерьерной концепции проекта. Материалы, освещение и инженерные решения подобраны для комфортной повседневной работы.</p>
-    </div>
-    <div data-reveal>
-      <ul class="checklist">
-        <li>Отделка стен</li>
-        <li>Отделка потолка</li>
-        <li>Напольное покрытие</li>
-        <li>Межкомнатные и входные двери</li>
-        <li>Сценарии освещения и светильники</li>
-        <li>Электрика и розетки</li>
-        <li>Слаботочные системы и выводы для подключения интернета</li>
-        <li>Вентиляция и кондиционирование</li>
-      </ul>
+<section class="section screen" id="finish">
+  <div class="container">
+    <div class="finish">
+      <div class="finish__photo" data-reveal><img src="img/lounge-1600.webp" srcset="img/lounge-800.webp 800w, img/lounge-1600.webp 1600w, img/lounge-2400.webp 2400w" data-full="img/lounge-2400.webp" sizes="(max-width: 900px) 100vw, 55vw" alt="Интерьер с дизайнерской отделкой" loading="lazy"></div>
+      <div class="finish__body" data-reveal>
+        <h2 class="h2">Готовая дизайнерская отделка</h2>
+        <p class="finish__lead">Офисы передаются с завершённой отделкой в единой интерьерной концепции проекта. Материалы, освещение и инженерные решения подобраны для комфортной повседневной работы.</p>
+        <ul class="checklist">
+          <li>Отделка стен</li>
+          <li>Отделка потолка</li>
+          <li>Напольное покрытие</li>
+          <li>Межкомнатные и входные двери</li>
+          <li>Сценарии освещения и светильники</li>
+          <li>Электрика и розетки</li>
+          <li>Слаботочные системы и выводы для подключения интернета</li>
+          <li>Вентиляция и кондиционирование</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== 6. Планировки по этажам ===== -->
-<section class="section" id="plans">
+<section class="section screen" id="plans">
   <div class="container">
     <h2 class="h2 plans__title" data-reveal>Планировки по этажам</h2>
     <div class="tabs" role="tablist" data-plan-tabs data-reveal>
@@ -295,7 +300,7 @@
 </section>
 
 <!-- ===== 7. Два сценария покупки ===== -->
-<section class="section" id="scenarios">
+<section class="section screen" id="scenarios">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Офис для работы или инвестиций</h2>
@@ -334,16 +339,16 @@
 </section>
 
 <!-- ===== 8. Общие пространства ===== -->
-<section class="section" id="spaces">
+<section class="section screen" id="spaces">
   <div class="container">
-    <div class="section-head">
-      <div class="section-head__row" data-reveal>
-        <h2 class="h2">Больше,<br>чем площадь<br>собственного<br>офиса</h2>
-        <p class="section-head__text">Часть функций вынесена в общие пространства бизнес-центра. Поэтому приватный офис сохраняет камерность, оставаясь частью полноценной деловой среды.</p>
-      </div>
-      <div class="slider-nav" data-reveal>
-        <button class="arrow arrow--prev" type="button" aria-label="Назад" data-nav-prev="spaces"><svg><use href="#i-arrow"/></svg></button>
-        <button class="arrow" type="button" aria-label="Вперёд" data-nav-next="spaces"><svg><use href="#i-arrow"/></svg></button>
+    <div class="split">
+      <h2 class="h2" data-reveal>Больше, чем площадь<br>собственного офиса</h2>
+      <div class="split__text" data-reveal>
+        <p>Часть функций вынесена в общие пространства бизнес-центра. Поэтому приватный офис сохраняет камерность, оставаясь частью полноценной деловой среды.</p>
+        <div class="slider-nav">
+          <button class="arrow arrow--prev" type="button" aria-label="Назад" data-nav-prev="spaces"><svg><use href="#i-arrow"/></svg></button>
+          <button class="arrow" type="button" aria-label="Вперёд" data-nav-next="spaces"><svg><use href="#i-arrow"/></svg></button>
+        </div>
       </div>
     </div>
   </div>
@@ -391,7 +396,7 @@
 </section>
 
 <!-- ===== 9. Сервис ===== -->
-<section class="section" id="service">
+<section class="section screen" id="service">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Сервис бизнес-центра</h2>
@@ -413,7 +418,7 @@
 </section>
 
 <!-- ===== 10. О здании ===== -->
-<section class="section" id="building">
+<section class="section screen" id="building">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Камерный бизнес-центр в исторической среде Арбата</h2>
@@ -431,13 +436,15 @@
       <li data-reveal><b>1 отдельный офис</b><span>130 м², два уровня, отдельный вход</span></li>
     </ul>
   </div>
+</section>
 
-  <!-- ===== 11. Архитектура и интерьеры ===== -->
-  <div class="container arch">
-    <div class="section-head">
-      <div data-reveal>
-        <h3 class="h3">Архитектура и интерьеры</h3>
-        <p class="section-head__text">Реновация сохраняет пропорции существующего здания. Фасад, входная группа, общие пространства и офисные интерьеры решены в едином визуальном ключе, который поддерживает камерный характер проекта и его связь с историческим окружением Арбата.</p>
+<!-- ===== 11. Архитектура и интерьеры ===== -->
+<section class="section screen" id="architecture">
+  <div class="container">
+    <div class="split">
+      <h2 class="h2" data-reveal>Архитектура и интерьеры</h2>
+      <div class="split__text" data-reveal>
+        <p>Реновация сохраняет пропорции существующего здания. Фасад, входная группа, общие пространства и офисные интерьеры решены в едином визуальном ключе, который поддерживает камерный характер проекта и его связь с историческим окружением Арбата.</p>
       </div>
     </div>
     <div class="tabs" role="tablist" data-tabs="arch" data-reveal>
@@ -482,10 +489,13 @@
     </div>
   </div>
 
-  <!-- ===== 12. Инженерия ===== -->
-  <div class="container engineering">
+</section>
+
+<!-- ===== 12. Инженерия и парковка ===== -->
+<section class="section screen" id="engineering">
+  <div class="container">
     <div class="split">
-      <h3 class="h3" data-reveal>Современные инженерные системы</h3>
+      <h2 class="h2" data-reveal>Современные инженерные системы</h2>
       <div class="split__text" data-reveal>
         <p>Инженерные системы обеспечивают комфортный микроклимат, электроснабжение, связь и безопасность для ежедневной работы офисов.</p>
       </div>
@@ -499,10 +509,6 @@
       <li data-reveal><svg class="ico"><use href="#i-key"/></svg><h4 class="h5">Контроль доступа</h4><p>СКУД для входа в здание и доступа в отдельные зоны.</p></li>
       <li data-reveal><svg class="ico"><use href="#i-camera"/></svg><h4 class="h5">Видеонаблюдение и пожарная безопасность</h4><p>Системы видеонаблюдения и пожарной безопасности в здании.</p></li>
     </ul>
-  </div>
-
-  <!-- Парковка -->
-  <div class="container">
     <div class="parking" data-reveal>
       <div class="parking__img"><img src="img/detail-lightwell-1600.webp" srcset="img/detail-lightwell-800.webp 800w, img/detail-lightwell-1600.webp 1600w, img/detail-lightwell-2400.webp 2400w" data-full="img/detail-lightwell-2400.webp" sizes="(max-width: 900px) 100vw, 35vw" alt="Фасад бизнес-центра" loading="lazy"></div>
       <h3 class="parking__title">Парковка у бизнес-центра</h3>
@@ -512,7 +518,7 @@
 </section>
 
 <!-- ===== 13. Арбат и расположение ===== -->
-<section class="section" id="location">
+<section class="section screen" id="location">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Арбат, 4/3</h2>
@@ -534,12 +540,19 @@
       <div class="arbat-photos__item" data-reveal><img src="img/moscow-panorama-1600.webp" srcset="img/moscow-panorama-800.webp 800w, img/moscow-panorama-1600.webp 1600w, img/moscow-panorama-2400.webp 2400w" data-full="img/moscow-panorama-2400.webp" sizes="(max-width: 900px) 50vw, 25vw" alt="Вид на центр Москвы и Кремль" loading="lazy"></div>
       <div class="arbat-photos__item" data-reveal><img src="img/moscow-avenue-1600.webp" srcset="img/moscow-avenue-800.webp 800w, img/moscow-avenue-1600.webp 1600w, img/moscow-avenue-2400.webp 2400w" data-full="img/moscow-avenue-2400.webp" sizes="(max-width: 900px) 50vw, 25vw" alt="Кутузовский проспект и Москва-Сити" loading="lazy"></div>
     </div>
+  </div>
+</section>
 
-    <div class="map-block" data-reveal>
-      <div class="map-block__head">
-        <h3 class="h4">Всё необходимое рядом</h3>
-        <p class="note">Выберите категорию, чтобы увидеть объекты рядом с бизнес-центром.</p>
+<!-- ===== 14. Карта окружения ===== -->
+<section class="section screen" id="nearby">
+  <div class="container">
+    <div class="split">
+      <h2 class="h2" data-reveal>Всё необходимое рядом</h2>
+      <div class="split__text" data-reveal>
+        <p>Выберите категорию, чтобы увидеть объекты рядом с бизнес-центром.</p>
       </div>
+    </div>
+    <div class="map-block" data-reveal>
       <div class="map-filters" role="group" aria-label="Категории на карте">
         <button class="chip is-active" type="button" data-cat="all">Все объекты</button>
         <button class="chip" type="button" data-cat="transport">Транспорт</button>
@@ -556,7 +569,7 @@
 </section>
 
 <!-- ===== 15. Девелопер ===== -->
-<section class="section section--tight" id="developer">
+<section class="section screen" id="developer">
   <div class="container">
     <div class="panel panel--dark split split--panel" data-reveal>
       <h2 class="h2">Девелопер проекта&nbsp;—<br>ГК&nbsp;«МЕТРЫ»</h2>
@@ -569,7 +582,7 @@
 </section>
 
 <!-- ===== 16. Ход работ ===== -->
-<section class="section" id="progress">
+<section class="section screen" id="progress">
   <div class="container">
     <div class="split">
       <h2 class="h2" data-reveal>Ход реализации проекта</h2>
@@ -620,7 +633,7 @@
 </section>
 
 <!-- ===== 17. Условия покупки ===== -->
-<section class="section section--tight" id="terms">
+<section class="section screen" id="terms">
   <div class="container">
     <div class="panel panel--dark terms" data-reveal>
       <div class="split split--panel">
@@ -644,7 +657,7 @@
 </section>
 
 <!-- ===== 18. Контакты и форма ===== -->
-<section class="section section--tight contact" id="contacts">
+<section class="section screen contact" id="contacts">
   <div class="container">
     <div class="panel panel--light contact__panel" data-reveal>
       <div class="contact__form-wrap">
@@ -734,6 +747,6 @@
   <figure class="lightbox__figure"><img alt=""></figure>
   <button class="arrow arrow--light lightbox__next" type="button" aria-label="Вперёд"><svg><use href="#i-arrow"/></svg></button>
 </div>
-
+
 </body>
 </html>
