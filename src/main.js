@@ -42,16 +42,9 @@ document.addEventListener('click', (e) => {
   scroll.to(target ?? document.body);
 });
 
-// ----- Шапка -----
+// ----- Шапка: всегда закреплена, после первого экрана — с фоном -----
 const header = document.getElementById('header');
-let lastY = 0;
-const onScroll = () => {
-  const y = window.scrollY;
-  header.classList.toggle('is-scrolled', y > 40);
-  const menuOpen = header.classList.contains('menu-open');
-  header.classList.toggle('is-hidden', !menuOpen && y > 600 && y > lastY);
-  lastY = y;
-};
+const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
