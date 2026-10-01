@@ -48,6 +48,18 @@ const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 4
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// ----- Подсветка текущего раздела в меню -----
+const navLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
+const navTargets = navLinks.map((a) => document.getElementById(a.getAttribute('href').slice(1)));
+const markActive = () => {
+  const line = window.innerHeight * 0.4;
+  let current = -1;
+  navTargets.forEach((el, i) => { if (el && el.getBoundingClientRect().top <= line) current = i; });
+  navLinks.forEach((a, i) => a.classList.toggle('is-current', i === current));
+};
+window.addEventListener('scroll', markActive, { passive: true });
+markActive();
+
 // ----- Мобильное меню -----
 const burger = header.querySelector('.burger');
 function closeMenu() {
