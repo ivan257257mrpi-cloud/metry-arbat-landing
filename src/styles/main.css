@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 { margin: 0; font-family: var(--f-head); font-weight: 300; }
   --text: var(--graphite); --muted: #5d5c64; --line: rgba(41, 41, 49, 0.14);
   color: var(--text);
 }
-.panel--dark, .format, .scenario--dark, .parking, .terms, .accent-strip, .plan-info {
+.panel--dark, .format, .special__card, .scenario--dark, .parking, .terms, .accent-strip, .plan-info {
   --text: var(--cream); --muted: rgba(245, 242, 234, 0.7); --line: rgba(245, 242, 234, 0.16);
   color: var(--text);
 }
@@ -205,8 +205,13 @@ h1, h2, h3, h4, h5 { margin: 0; font-family: var(--f-head); font-weight: 300; }
 .special__grid { display: grid; grid-template-columns: calc(var(--col) - var(--gap)) minmax(0, 1fr); gap: var(--gap); align-items: stretch; }
 .special__render { border-radius: var(--radius); overflow: hidden; }
 .special__render img { width: 100%; height: 100%; object-fit: cover; }
-.special__text { align-self: center; max-width: 30ch; }
-.special__text p { font: 300 clamp(22px, 1vw + 12px, 30px)/1.35 var(--f-head); letter-spacing: -0.01em; }
+.special__card { background: var(--graphite); border-radius: var(--radius); padding: clamp(24px, 4vh, 48px) clamp(24px, 3vw, 48px); display: flex; flex-direction: column; }
+.special__card p { color: var(--muted); font-size: var(--fs-small); margin-bottom: clamp(14px, 2.4vh, 24px); }
+.special__card .special__lead { font: 300 clamp(19px, 0.6vw + 12px, 24px)/1.35 var(--f-head); color: var(--text); margin-bottom: clamp(12px, 2vh, 24px); }
+.special__list { display: grid; gap: clamp(8px, 1.6vh, 18px); margin-bottom: clamp(14px, 2.4vh, 24px); }
+.special__list li { color: var(--muted); padding-top: clamp(8px, 1.6vh, 18px); border-top: 1px solid var(--line); }
+.special__list li::before { top: calc(clamp(8px, 1.6vh, 18px) + 0.8em); }
+.special__card .special__accent { margin: auto 0 0; padding-top: clamp(14px, 2.4vh, 20px); border-top: 1px solid var(--line); color: var(--text); font-weight: 500; }
 
 /* ===== 5. Отделка ===== */
 .finish { display: grid; grid-template-columns: calc(var(--col) - var(--gap)) minmax(0, 1fr); gap: var(--gap); align-items: stretch; }
@@ -475,7 +480,6 @@ h1, h2, h3, h4, h5 { margin: 0; font-family: var(--f-head); font-weight: 300; }
   .split, .finish, .special__grid, .contact__panel, .panel .split, .split.panel { grid-template-columns: 1fr; }
   .finish__photo { min-height: 0; aspect-ratio: 16 / 10; }
   .special__render { aspect-ratio: 4 / 3; }
-  .special__text { max-width: none; }
   .formats, .scenarios { grid-template-columns: 1fr; }
   .card-photo { grid-template-columns: 1fr; }
   .card-photo__img { aspect-ratio: 16 / 10; min-height: 0; }
